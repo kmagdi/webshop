@@ -1,0 +1,20 @@
+.footer-areea{
+    background-color: #131921;
+    color:white;
+    min-height: 100px;
+    width: 100%;
+}
+.footer-tab{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.footer-links{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
