@@ -3,7 +3,7 @@ import './Product.css'
 import {useStateValue} from '../stateProvider'
 
 
-export const Product=({id,title,img,price,rating})=>{
+export const Product=({id,title,img,price,rating,quantity})=>{
     const [basket,dispatch]=useStateValue()
     console.log('basket content:',basket)
    
@@ -15,7 +15,8 @@ export const Product=({id,title,img,price,rating})=>{
             title:title,
             img:img,
             price:price,
-            rating:rating
+            rating:rating,
+            quantity:quantity
             }
         })
     }

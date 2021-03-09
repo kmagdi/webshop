@@ -5,7 +5,7 @@ import './Subtotal.css'
 
 export const Subtotal=()=>{
     const [{basket},dispatch]=useStateValue()
-    const getCartTotal=(basket)=>basket?.reduce((tot,item)=>item.price+tot,0)
+    const getCartTotal=(basket)=>basket?.reduce((tot,item)=>item.price*item.quantity+tot,0)
     
     return(
         <div className='subtotal'>

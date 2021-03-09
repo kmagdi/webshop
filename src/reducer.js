@@ -21,5 +21,19 @@ export const reducer=(state,action)=>{
                 }else
                     console.log('valami hiba...')
             return{...state, basket:newCart }
+        case 'PLUS_ONE':
+            let plusCart=[...state.basket]
+            const plusIndex=state.basket.findIndex(item=>item.id==action.id)
+            plusCart.splice(plusIndex,1)
+            plusCart.push(action.item)
+            return{...state, basket:plusCart }
+        case 'MINUS_ONE':
+            let minusCart=[...state.basket]
+            const minusIndex=state.basket.findIndex(item=>item.id==action.id)
+            if(action.item.quantity>0){
+                 minusCart.splice(minusIndex,1)
+                 minusCart.push(action.item)
+            }  
+            return{...state, basket:minusCart }
   }  
 } 

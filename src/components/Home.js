@@ -12,16 +12,19 @@ export const Home=()=>{
                         price={1000} 
                         img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
                         rating={4}
+                        quantity={1}
                 />
                  <Product id={2} title={'a termék neve'} 
-                        price={1000} 
+                        price={2000} 
                         img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
                         rating={2}
+                        quantity={1}
                 />
                  <Product id={3} title={'a termék neve'} 
-                        price={1000} 
+                        price={3000} 
                         img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
                         rating={3}
+                        quantity={1}
                 />
             </div>
         </div>
