@@ -1,31 +1,27 @@
 import homeimg from './homeimg.jpg'
 import {Product} from './Product'
 import './Home.css'
+import {useProducts} from  './useProducts'
 
 export const Home=()=>{
+    const products=useProducts()
+
     return(
         <div className='home'>
             <img className='home-img' alt='' src={homeimg}/>
 
             <div className='home-row'>
-                <Product id={1} title={'a termék neve'} 
-                        price={1000} 
-                        img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
-                        rating={4}
-                        quantity={1}
+            {products.map(product=>
+                <Product key={product.id}
+                    id={product.id}
+                    title={product.name}
+                    price={product.price}
+
+                    quantity={product.quantity}
+                    img={product.photo}
+                    rating={4}
                 />
-                 <Product id={2} title={'a termék neve'} 
-                        price={2000} 
-                        img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
-                        rating={2}
-                        quantity={1}
-                />
-                 <Product id={3} title={'a termék neve'} 
-                        price={3000} 
-                        img='https://raw.githubusercontent.com/kmagdi/memory/master/src/components/hegy.jpg'
-                        rating={3}
-                        quantity={1}
-                />
+            )}
             </div>
         </div>
 

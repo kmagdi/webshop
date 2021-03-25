@@ -6,21 +6,19 @@ export const Navlinks=()=>{
     return(
         <div className='navlinks'>
             <div className='navlinks-outer'>
-            <div className='navlinks-inner'>
+           
                  <Link>
                     Today ....
                  </Link>
                  <Link>
                     Kapcsolat
                  </Link>
-                 <Link>
-                    Regisztráció
+                 <Link to='/insertproducts'>
+                    Termék nyílvántartás
                  </Link>
-                 <Link>
-                    Menü ....
+                 <Link to='/uploadphoto'>
+                    Fájlfeltöltés
                  </Link>
-                 
-            </div>
            
             </div>
         </div>

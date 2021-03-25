@@ -1,4 +1,3 @@
-import { useScrollTrigger } from "@material-ui/core"
 
 //to push data to data layer
 export const initialState={
@@ -35,5 +34,12 @@ export const reducer=(state,action)=>{
                  minusCart.push(action.item)
             }  
             return{...state, basket:minusCart }
+        case 'MODIFY_QUANTITY':
+            let mCart=[...state.basket]
+            mCart.forEach(e=>{
+                if(e.id==action.id)
+                    e.quantity=action.qty+1
+            })
+            return{...state, basket:mCart }
   }  
 } 

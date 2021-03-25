@@ -37,14 +37,14 @@ export const Checkout=()=>{
                 
             </div>
          
-                {
-                    basket.length>0 && (
-                      <div className='checkout-right'>     
-                        <Subtotal />
-                      </div>
-                    )
+          {
+            basket.length>0 && (
+                <div className='checkout-right'>     
+                <Subtotal />
+                </div>
+            )
                 }
-                
+        
         
         </div>
     )
