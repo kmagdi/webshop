@@ -1,19 +1,15 @@
-.home{
-    max-width:1200px ;
-    margin-left: auto;
-    margin-right: auto;
+.banner{
+        background-image: url(homeimg.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position:center center ;
+}
 
-}
-.home-img{
-    display: block;
-    width: 100%;
-    z-index: -1;
-    margin-bottom: -150px;
-}
 
 .home-row{
     display: flex;
-    z-index: -1;
-    margin-left: 5px;
-    margin-right: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    justify-content: center;
 }

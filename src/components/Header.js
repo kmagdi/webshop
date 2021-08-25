@@ -12,7 +12,7 @@ export const Header=()=>{
     const [{basket,loggedinuser},dispatch]=useStateValue()
 
     //console.log('basket:'+basket)
-    //console.log('user:')
+    console.log('user:'+loggedinuser?.email)
     const logoutUser=()=>{
         auth.signOut()
     }

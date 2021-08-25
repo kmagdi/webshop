@@ -1,14 +1,18 @@
 .navlinks{
+    display:flex;
+    margin: 2px;
     background-color: #131921;
     color:white;
-    height: 40px;
-    width: 100%;
+    /*height: 40px;
+    width: 100%;*/
 }
 .navlinks-outer{
-    width: 70%;
-    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
     padding: 6px;
-    
+   text-align: center;
 }
 .navlinks-outer a{
     color: whitesmoke;
@@ -19,6 +23,7 @@
     border:0.5px solid gray;
     border-radius: 4px;
     margin-right: 10px;
+    flex:1 1 15%;
 }
 .navlinks-outer a:hover{
     color:orange;

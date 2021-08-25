@@ -15,6 +15,7 @@ import {UploadPhoto} from './components/UploadPhoto'
 import {InsertProducts} from './components/InsertProducts'
 
 function App() {
+   
   return (
     
   <BrowserRouter>

@@ -22,9 +22,9 @@
     
 }
 .header-search-input{
-    height: 12px;
+    height: 16px;
     padding: 10px;
-    border: none;
+    border: 1px solid orange;
     width: 100%;
 }
 .header-search-icon{
@@ -59,6 +59,7 @@
     font-size: 13px;
     font-weight: 800;
     background-color: #131921;
+    color:orange;
 }
 .header-nav{
     background-color: #131921;
@@ -73,5 +74,6 @@
 .header-product-count{
     margin-left: 10px;
     margin-right: 10px;
-   
+    color:orange;
+    padding: 10px;
 }

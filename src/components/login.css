@@ -12,7 +12,7 @@
     margin-bottom: 20px;
 }
 .login-container{
-    width: 200px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -21,7 +21,7 @@
 .login-signin-btn, .login-registration{
     background-color: rgb(224, 188, 26);
     border:1px solid;
-    height: 20px;
+    height: 40px;
     border-radius: 2px;
     color:rgb(37, 33, 33);
     border-color: rgb(37, 33, 33);

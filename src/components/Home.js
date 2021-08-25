@@ -1,5 +1,7 @@
+import React from 'react';
 import homeimg from './homeimg.jpg'
 import {Product} from './Product'
+import {ProductFlip} from './ProductFlip'
 import './Home.css'
 import {useProducts} from  './useProducts'
 
@@ -7,12 +9,11 @@ export const Home=()=>{
     const products=useProducts()
 
     return(
-        <div className='home'>
-            <img className='home-img' alt='' src={homeimg}/>
-
+        <React.Fragment>
+            <div className='banner'></div>
             <div className='home-row'>
             {products.map(product=>
-                <Product key={product.id}
+                <ProductFlip key={product.id}
                     id={product.id}
                     title={product.name}
                     price={product.price}
@@ -23,7 +24,9 @@ export const Home=()=>{
                 />
             )}
             </div>
-        </div>
+        </React.Fragment> 
+       
+        
 
     )
 }

@@ -1,14 +1,16 @@
 .product{
+    flex:1 1 calc(25% - 64px);
     display: flex;
     flex-direction: column;
-    max-height: 400px;
-    min-width: 100px;
+
     margin: 10px;
     background-color: white;
-    z-index: 1;
-    width: 100%;
+    /*z-index: 1;
+    width: 100%;*/
     padding: 20px;
     justify-content: flex-end;
+    border:1px solid orange;
+    height:500px;
 }
 .product-rating{
     display: flex;
@@ -22,6 +24,7 @@
 
 }
 .product-img{
+    width:200px;
     max-height:200px ;
     object-fit: contain;
     margin-bottom:15px ;
