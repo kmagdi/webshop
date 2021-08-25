@@ -12,10 +12,10 @@
     margin-bottom: 20px;
 }
 .login-container{
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border:1px solid lightgrey;
 }
 .login-signin-btn, .login-registration{

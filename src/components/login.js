@@ -25,8 +25,6 @@ export const Login=()=>{
             })
             .catch(e=>alert(e.message))
     }
-
-
     return(
         <div className='login'>
             <Link>
